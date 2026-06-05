@@ -91,10 +91,12 @@ Private Subnet B	10.0.4.0/24	AZ-B
         sudo yum install httpd -y
 
 12. Start and Enable Apache
-
+        sudo systemctl start httpd
+        sudo systemctl enable httpd
 13. Create Test Web Page
-
+        echo "<h1>Hello myself amarjit paul and this is my ec2</h1>" | sudo tee /var/www/html/index.html
 14. Verify Deployment
+        http://<Public-IP>
 
 
 # Security Features
@@ -167,4 +169,6 @@ Private Subnet B	10.0.4.0/24	AZ-B
 <img width="940" height="437" alt="image" src="https://github.com/user-attachments/assets/389f69d1-e9bf-464a-b377-b66f5a7b9c6e" />
 
 13. Deployment
-<img width="940" height="437" alt="image" src="https://github.com/user-attachments/assets/7fc47286-41fa-4db3-b013-5bd7a89fcb70" />
+<img width="940" height="501" alt="image" src="https://github.com/user-attachments/assets/0fd1b231-1ecc-43cc-b510-7859b5efa7ba" />
+
+
